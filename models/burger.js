@@ -7,7 +7,6 @@ var burger = {
       cb(res);
     });
   },
- 
   insertOne: function (cols, vals, cb) {
     orm.insertOne(table, cols, vals, function (res) {
       cb(res);
@@ -24,3 +23,5 @@ var burger = {
     });
   }
 };
+
+module.exports = burger;
